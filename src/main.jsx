@@ -1,7 +1,10 @@
-import React from 'react';
-import { createRoot } from 'react-dom/client';
-import Home from './pages/index.jsx';
-import './index.css'; // Tailwind styles
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import Home from './pages/index.jsx'
+import './index.css'
 
-const root = createRoot(document.getElementById('root'));
-root.render(<Home />);
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <Home />
+  </React.StrictMode>
+)
